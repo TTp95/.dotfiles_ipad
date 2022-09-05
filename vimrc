@@ -48,7 +48,7 @@ set nowrap
 
 set noswapfile
 set nobackup
-set undodir=~/.vim/undodir
+set undodir=~/Documents/.vim/undodir
 set undofile
 
 set nohlsearch
