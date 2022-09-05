@@ -177,6 +177,32 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " }}}
 
 " VIMSCRIPT -------------------------------------------------------------- {{{
+" Tex
+augroup LaTex
+    au!
+    au FIleType tex setlocal spell spelllang=en_us
+    au FIleType tex setlocal wrap
+    au FIleType tex nnoremap <Down> gj
+    au FIleType tex inoremap <Down> <C-o>gj
+    au FIleType tex vnoremap <Down> gj
+    au FIleType tex nnoremap <Up> gk
+    au FIleType tex inoremap <Up> <C-o>gk
+    au FIleType tex vnoremap <Up> gk
+augroup END
+let g:tex_flavor = 'latex'
+
+" Markdown
+augroup Markdown
+    au!
+    au FIleType md setlocal spell spelllang=en_us
+    au FIleType md setlocal wrap
+    au FIleType md nnoremap <Down> gj
+    au FIleType md inoremap <Down> <C-o>gj
+    au FIleType md vnoremap <Down> gj
+    au FIleType md nnoremap <Up> gk
+    au FIleType md inoremap <Up> <C-o>gk
+    au FIleType md vnoremap <Up> gk
+augroup END
 
 " }}}
 
